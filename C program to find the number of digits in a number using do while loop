@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main() {
+   int count,num;
+   count=0;
+   printf("Enter the Number: ");
+   scanf("%d",&num);
+  
+  do{
+    num=num/10;
+    count++;
+  } while(num!=0);
+  printf("The number of Digits is %d", count); 
+
+    return 0;
+}
