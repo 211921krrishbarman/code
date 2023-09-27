@@ -1,0 +1,20 @@
+/* ADDING A RANGE OF NUMBERS USING RECURSION IN C */
+
+#include<stdio.h>
+int sum(int k);    // DECLARING THE FUNCTION WHICH WILL HANDLE THE ADDITION OPERATION //
+int main(){
+    int k;    // DECLARING K IN THE MAIN FUNCTION //
+    printf("Enter the number till when you want addition : ");
+    scanf("%d",&k);    // TAKING INPUT FOR K //
+    int result= sum(k);    
+    printf("Result= %d", result);
+    return 0;
+}
+    int sum(int k){
+        if(k>0){        /*    This PART OF CODE WILL KEEP LOOPING UNTIL THE NUMBER THAT HAS BEEN MENTIONED BECOMES 0 AND EVERYTIME IT RUNS , THERES A DECREASE OF 1 LIKE
+                                              10,9,8....0 */
+            return k+ sum(k-1);  
+        }else {return 0;}
+    
+}
+
